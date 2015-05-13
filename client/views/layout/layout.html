@@ -1,0 +1,14 @@
+<template name="layout">
+  {{> navbar }}
+  {{> yield }}
+</template>
+
+<template name="navbar">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <a href="{{ pathFor 'home' }}" class="brand-logo center">{{ dict 'basic.title' }}</a>
+      </div>
+    </nav>
+  </div>
+</template>
